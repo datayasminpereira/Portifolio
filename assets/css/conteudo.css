@@ -10,8 +10,9 @@ main {
     background-color: var(--cor-de-fundo);
 
     display: grid;
-    grid-template-columns: 45vw 55vw;
-    grid-template-rows: calc(100vh - var(--header-height) - var(--footer-height));
+    justify-content: space-between;
+    grid-template-columns: 38vw 60vw;
+    grid-template-rows: calc(100vh - 95px - 45px);
 
 }
 
@@ -19,9 +20,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
-    padding-left: 100px;
-    padding-top: 15vh;
+    padding-left: 10vw;
+    padding-top: 10vh;
     
 }
 
@@ -67,13 +69,14 @@ main {
     flex-direction: column;
     align-items: center;
 
-    padding-left: 200px;
-    padding-top: 15vh;
+    padding-left: 25vw;
+    padding-top: 10vh;
+    
 }
 
 .foto-rosto {
-    width: 200px;
-    height: 200px;
+    width: 12.5em;
+    height: 12.5em;
     clip-path: circle();
 }
 
@@ -91,6 +94,45 @@ main {
     text-decoration:underline;
 }
 
+@media screen and (max-width: 578px) {
+    .foto-rosto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .apresentacao-a-esquerda {
+        padding-left: 10vw;
+        padding-top: 15vh;
+    }
+
+    .apresentacao-a-esquerda h2 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .apresentacao-a-esquerda h3, .apresentacao-a-esquerda button  {
+        font-size: 14px;
+    }
+
+    .apresentacao-a-esquerda button {
+        width: auto;
+        padding: 1em;
+    }
+
+    .apresentacao-a-direita {
+        padding-left: 15vw;
+        padding-top: 15vh;
+    }
+
+    .especificacao {
+        padding-left: 2em;
+        padding-right: 0.5em;
+    }
+
+    .apresentacao-a-direita p {
+        font-size: 14px;
+    }
+}
 
 @media screen and (min-width: 1728px) {
     .apresentacao-a-esquerda h2 {
