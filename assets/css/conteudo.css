@@ -1,0 +1,122 @@
+main {
+    color: white;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+    /* HOME */
+
+.apresentacao {
+    height:  calc(100vh - var(--header-height) - var(--footer-height));
+    background-color: var(--cor-de-fundo);
+
+    display: grid;
+    grid-template-columns: 45vw 55vw;
+    grid-template-rows: calc(100vh - var(--header-height) - var(--footer-height));
+
+}
+
+.apresentacao-a-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 100px;
+    padding-top: 15vh;
+    
+}
+
+.apresentacao-a-esquerda h2 {
+    margin-top: 2em;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.apresentacao-a-esquerda h3 {
+    margin: 2em 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.apresentacao-a-esquerda button {
+    width: 150px;
+    background: var(--rosa-lilas);
+    color: var(--branco);
+    padding: 1.5em 1.5em;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins";
+
+    border: 2px solid transparent;
+    border-image-slice: 1;
+    border-width: 1px;
+    
+
+}
+
+.apresentacao-a-esquerda button:hover {
+    cursor: pointer;
+    background: transparent;
+    border-image-source: var(--rosa-lilas);
+}
+
+.apresentacao-a-direita {
+    background: var(--rosa-lilas);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 200px;
+    padding-top: 15vh;
+}
+
+.foto-rosto {
+    width: 200px;
+    height: 200px;
+    clip-path: circle();
+}
+
+.apresentacao-a-direita p {
+    margin: 1.5em 0;
+    font-size: 18px;
+
+}
+
+.nome-sobrenome {
+    color: #c94699e3;
+}
+
+.front-end {
+    text-decoration:underline;
+}
+
+
+@media screen and (min-width: 1728px) {
+    .apresentacao-a-esquerda h2 {
+        font-size: 44px;
+    }
+
+    .apresentacao-a-esquerda h3 {
+        font-size: 30px;
+        margin: 2em 0;
+    }
+
+    .apresentacao-a-esquerda button {
+        font-size: 30px;
+        width: auto;
+    }
+
+    .foto-rosto {
+        margin-top: 2em;
+        width: 350px;
+        height: 350px;
+    }
+
+    .apresentacao-a-direita p {
+        font-size: 30px;
+        padding-left: 2em;
+    }
+
+}
+

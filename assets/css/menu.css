@@ -1,0 +1,122 @@
+.menu {
+    padding: 1em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--cor-de-fundo);
+    box-shadow: var(--shadow--escura-destaque);
+    border-bottom: 1px solid var(--cinza-claro);
+   
+}
+
+.menu-lista {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 1.5em;    
+}
+
+.menu-lista__item {
+    display: inline;
+}
+
+.menu-lista__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--lilas);
+}
+
+.menu-lista__link:hover {
+    color: var(--rosa);
+}
+
+
+
+@keyframes animacao {
+
+    0%, 10%, 100% {
+        background: linear-gradient(to left, #743ad5, #c94699e3);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    70%, 90% {
+        background: linear-gradient(to left, #c94699e3, #743ad5 );
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+}
+
+.menu-lista__link-animacao {
+    animation-name: animacao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0 0 5px #858585);
+}
+
+
+
+@media screen and (max-width: 578px) {
+
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .menu {
+        background-color: red;
+
+    }
+
+    .menu-lista-mobile {
+        padding: 1em;
+        display: flex;
+        justify-content: flex-start;
+        row-gap: 2em;
+        flex-direction: column;
+        width: 40vw;
+        top: var(--header-height-mobile);
+        height: calc(100vh - var(--header-height-mobile) - var(--footer-height));
+        background-color: var(--cor-de-fundo);
+    
+        position: absolute;
+        left: -100vw;
+        transition: .25s;
+    }
+    
+    .menu-lista-mobile--ativo {
+        left: 0;
+        transition: .25s;
+    }
+
+    .menu-lista__link {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .menu-lista__link:hover {
+        color: var(--rosa);
+    }
+
+}
+
+
+@media screen and (min-width: 1728px) {
+
+    .menu {
+        border-left: 1px solid var(--cinza-claro);
+    }
+
+    .menu-lista {
+        column-gap: 3em;
+    }
+
+    .menu-lista__link {
+        font-size: 36px;
+    }
+}
+
