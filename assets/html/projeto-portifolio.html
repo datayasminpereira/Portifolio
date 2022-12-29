@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="projeto-especifico">
+    
+        <div class="projeto-especifico__cabecalho">
+            <h2 class="projeto-especifico__cabecalho--titulo">AluraBooks</h2>
+        </div>
+        
+        <div class="projeto-especifico__swiper">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img src="../../assets/img/portifolio-1.png" alt="Imagem do projeto AluraBooks" class="carrosel__imagem">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img src="../../assets/img/portifolio-2.png" alt="Imagem do projeto AluraBooks" class="carrosel__imagem">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img src="../../assets/img/portifolio-3.png" alt="Imagem do projeto AluraBooks" class="carrosel__imagem">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img src="../../assets/img/portifolio-1-responsivo.png" alt="Imagem do projeto AluraBooks" class="carrosel__imagem--responsivo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img src="../../assets/img/portifolio-2-responsivo.png" alt="Imagem do projeto AluraBooks" class="carrosel__imagem--responsivo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img src="../../assets/img/portifolio-3-responsivo.png" alt="Imagem do projeto AluraBooks" class="carrosel__imagem--responsivo">
+                            </div>
+                        </div>
+                </div>
+                
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+        <div class="projeto-especifico__legenda">
+            <p class="projeto-especifico__legenda--ferramentas">HTML | CSS | JavaScript | Fetch | SwiperJS</p>
+            <p class="projeto-especifico__legenda--descricao">Projeto feito com intuito de exbir meus empenhos. Foi utilizado o framework SwiperJS, a API Fetch, além disso está responsivo.</p>
+            <a href="https://github.com/datayasminpereira/Portifolio" class="projeto-especifico__legenda--link projeto-especifico__legenda--link-repositorio"><i class="fa-brands fa-github"></i>Repositório</a>
+            <a href="https://datayasminpereira.github.io/Portifolio/" class="projeto-especifico__legenda--link projeto-especifico__legenda--link-site"><i class="fa-solid fa-link"></i>Site</a>
+        </div>
+    
+    </section>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            },
+            loop: true,
+            zoom: {
+                maxRatio: 2,
+                minRatio: 1
+            },
+            keyboard: {
+                enabled: true
+            }
+        });
+
+        swiper.on('click', function() {
+            this.zoom.in();
+        })
+    </script>
+</body>
+</html>

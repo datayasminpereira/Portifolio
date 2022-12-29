@@ -17,22 +17,66 @@ footer {
     align-items: center;
 }
 
+.contato__cv {
+    font-size: 14px;
+    background-color: var(--lilas);
+    color: black;
+    border-radius: 5px;
+    padding: 0.2em 0.6em;
+    font-weight: 500;
+}
+
+.contato__cv:hover {
+    background-color: var(--rosa)
+}
+
 footer i {
     font-size: 26px;
     color: var(--lilas);
+}
+
+footer .fa-envelope {
+    font-size: 28px;
 }
 
 footer i:hover {
     color: var(--rosa);
 }
 
-@media screen and (min-width: 1728px) {
+@media screen and (max-width: 710px) {
+    .rodape {
+        padding: 0 1em;
+    }
+
+    .contato__cv {
+        font-size: 12px;
+    }
+
+    footer i {
+        font-size: 20px;
+    }
+
+    footer .fa-envelope {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
 
     .rodape__contato {
         margin: 0 1em;
     }
 
+    .contato__cv {
+        font-size: 22px;
+        border-radius: 8px;
+    }
+
     footer i {
-        font-size: 44px;
+        font-size: 40px;
+    }
+
+    footer .fa-envelope {
+        font-size: 41px;
     }
 }

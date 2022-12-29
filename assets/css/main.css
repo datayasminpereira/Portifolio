@@ -1,0 +1,13 @@
+@import url("apresentacao.css");
+@import url("habilidades.css");
+@import url("projetos.css");
+@import url("sobre.css");
+
+.conteudo {
+    color: white;
+    overflow-y: scroll;
+    background-color: var(--cor-de-fundo);
+}
+
+
+

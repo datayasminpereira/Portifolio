@@ -12,15 +12,43 @@
 
 
 .logo {
+    border: 0;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
     font-size: var(--font-size-logo-desktop);
     font-weight: 700;
-    background: var(--rosa-lilas);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
+    
+    background-image: var(--rosa-lilas);
     background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    
 }
 
-@media screen and (max-width:578px) {
+.logo:hover {
+    animation-name: animacao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0 0 5px #444);
+}
+
+@keyframes animacao {
+
+    0%, 10%, 100% {
+        background: linear-gradient(to left, #743ad5, #c94699e3);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    70%, 90% {
+        background: linear-gradient(to left, #c94699e3, #743ad5);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+@media screen and (max-width:710px) {
 
     .cabecalho {
         display: flex;
@@ -49,7 +77,7 @@
     }
 }
 
-@media screen and (min-width: 1728px) {
+@media screen and (min-width: 1400px) {
 
     .cabecalho {
         justify-content: center;
@@ -58,7 +86,7 @@
     }
 
     .logo {
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
     }
 }

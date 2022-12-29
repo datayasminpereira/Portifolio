@@ -7,64 +7,66 @@
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Portifólio - Yasmin Pereira</title>
 </head>
+
 <body>
     
     <header class="cabecalho">
         <button class="cabecalho__menu" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
         <div class="cabecalho__logo">
-            <p class="logo">{dev-yasminpereira}</p>
+            <button class="logo">{dev-yasminpereira}</button>
         </div>
     </header>
 
     <nav class="menu">
         <ul class="menu-lista menu-lista-mobile">
             <li class="menu-lista__item">
-                <a href="index.html" class="menu-lista__link menu-lista__link--inicio">Início</a>
+                <a href="index.html" class="menu-lista__link inicio"><p class="menu-lista__link--texto">Início</p></a>
             </li>
             <li class="menu-lista__item">
-                <a href="assets/html/habilidades.html" class="menu-lista__link outro-html menu-lista__link--habilidades">Habilidades</a>
+                <a href="assets/html/habilidades.html" class="menu-lista__link outro-html habilidades"><p class="menu-lista__link--texto">Habilidades</p></a>
             </li>
             <li class="menu-lista__item">
-                <a href="assets/html/projetos.html" class="menu-lista__link outro-html menu-lista__link--projetos">Projetos</a>
+                <a href="assets/html/projetos.html" class="menu-lista__link outro-html projetos"><p class="menu-lista__link--texto">Projetos</p></a>
             </li>
             <li class="menu-lista__item">
-                <a href="assets/html/sobre.html" class="menu-lista__link outro-html menu-lista__link--sobre">Sobre</a>
-            </li>
-            <li class="menu-lista__item">
-                <a href="assets/html/contato.html" class="menu-lista__link outro-html menu-lista__link--contato">Contato</a>
+                <a href="assets/html/sobre.html" class="menu-lista__link outro-html sobre"><p class="menu-lista__link--texto">Sobre</p></a>
             </li>
         </ul>
     </nav>
 
-    <main class="conteudo">
+    <main class="conteudo" id="content">
 
         <section class="apresentacao">
 
             <div class="apresentacao-a-esquerda">
-                <h2>Olá, sou a <span class="nome-sobrenome">Yasmin Pereira</span></h2>
-                <h3>E sejam bem-vindos ao meu portifólio!</h3>
-                <button class="saber-mais">.saberMais()</button>
+                <h2 class="apresentacao-a-esquerda__titulo">Olá, sou a <span class="nome-sobrenome">Yasmin Pereira</span></h2>
+                <h3 class="apresentacao-a-esquerda__descricao">E sejam bem-vindos ao meu portifólio!</h3>
+                <button class="apresentacao-a-esquerda__saber-mais">.saberMais()</button>
             </div>
 
             <div class="apresentacao-a-direita">
-                <img src="assets/img/5.png" alt="Foto da Yasmin" class="foto-rosto">
-                <p class="especificacao">Especializando-se em <strong class="front-end">front-end</strong>.</p>
+                <img src="assets/img/rosto.png" alt="Foto da Yasmin" class="apresentacao-a-direita__foto">
+                <p class="apresentacao-a-direita__especificacao">Especializando-se em <strong class="front-end">front-end</strong>.</p>
             </div>
 
         </section>
-
+      
     </main>
 
     <footer class="rodape">
+        <a  href="YasminPereira-CV.pdf" download class="rodape__contato contato__cv">Download CV</a>
         <a href="https://github.com/datayasminpereira" class=" rodape__contato"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/yasmin-pereira-9a0a34212/" class=" rodape__contato"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:yasminbarroso0208@gmail.com" class=" rodape__contato"><i class="fa-solid fa-envelope"></i></a>
+        
     </footer>
-
-    <script src="scripts.js"></script>
+    
+    <script src="scripts.js" class="essencial"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
+
 </html>
