@@ -61,7 +61,7 @@ footer i:hover {
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
 
     .rodape__contato {
         margin: 0 1em;
