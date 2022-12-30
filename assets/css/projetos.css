@@ -76,7 +76,7 @@
 }
 
 .projeto__link--cadastro {
-    background-image: url("../../assets/img/alurabooks.png");
+    background-image: url("../../assets/img/cad.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -91,7 +91,7 @@
     
     background: #15171e;
 
-    padding: 0 0.7em;
+    padding: 0 0.7em 0 0.4em;
     margin-right: auto;
 }
 
@@ -111,6 +111,7 @@
     color: var(--rosa);
     font-size: 14px;
     font-weight: 200;
+    padding-right: 0.5em;
 }
 
 /* @media screen and (max-width: 578px) {

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="projeto-especifico">
+    
+        <div class="projeto-especifico__cabecalho">
+            <h2 class="projeto-especifico__cabecalho--titulo">Cadastro de usuários</h2>
+        </div>
+        
+        <div class="projeto-especifico__swiper">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="../../assets/img/cad.png" alt="Imagem do projeto Cadastro" class="carrosel__imagem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="../../assets/img/cad-2.png" alt="Imagem do projeto Cadastro" class="carrosel__imagem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="../../assets/img/cad-3.png" alt="Imagem do projeto Cadastro" class="carrosel__imagem">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="../../assets/img/cad-2-responsivo.png" alt="Imagem do projeto Cadastro" class="carrosel__imagem--responsivo">
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+        <div class="projeto-especifico__legenda">
+            <p class="projeto-especifico__legenda--ferramentas">HTML| CSS | JS | React | Json-server</p>
+            <p class="projeto-especifico__legenda--descricao">Projeto feito com a equipe Cod3r, foi usando React e React-Router para o front-end, já o back-end foi usado json-server. No aspecto do CSS, utilizei o framework Bootstrap.</p>
+            <a href="https://github.com/datayasminpereira/Projeto-Cadastro" class="projeto-especifico__legenda--link projeto-especifico__legenda--link-repositorio"><i class="fa-brands fa-github"></i>Repositório</a>
+        </div>
+    
+    </section>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            },
+            loop: true,
+            zoom: {
+                maxRatio: 2,
+                minRatio: 1
+            },
+            keyboard: {
+                enabled: true
+            }
+        });
+
+        swiper.on('click', function() {
+            this.zoom.in();
+        })
+    </script>
+</body>
+</html>
